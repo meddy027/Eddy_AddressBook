@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * Class to allow user to select desired menu option
+ */
 public class AddressBook {
     private static int counter = 0;
     static AddressEntry abe = new AddressEntry();
