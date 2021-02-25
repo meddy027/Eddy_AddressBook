@@ -1,1 +1,1 @@
-javadocs jetbrains://idea/navigate/reference?project=Eddy_Addressbook&path=docs/index.html
+javadocs localhost:/Users/malikeddy/IdeaProjects/Eddy_Addressbook/docs/index.html
