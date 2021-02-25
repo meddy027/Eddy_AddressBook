@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class AddressEntry {
 
+    /*Arraylists to hold parse data from file/program*/
+
     public static ArrayList<String> fnames = new ArrayList<String>();
     public static ArrayList<String> lnames = new ArrayList<String>();
     public static ArrayList<String> streets = new ArrayList<String>();
@@ -11,6 +13,8 @@ public class AddressEntry {
     public static ArrayList<String> phones = new ArrayList<String>();
     public static ArrayList<String> emails = new ArrayList<String>();
     public static ArrayList<String> zips = new ArrayList<String>();
+
+    /*Specific variables to hold parse data from file/program*/
     private static String fName = "";
     private static String lName = "";
     private static String st = "";
@@ -42,6 +46,9 @@ public class AddressEntry {
         System.out.println( "This is a constructor constructor" );
     }
 
+    /**
+     * @return the first name field entered and set from prompt_SetFirstName() method
+     */
     public static String prompt_GetFirstName() {
         return fName;
     }
@@ -97,24 +104,35 @@ public class AddressEntry {
     }
 
     /**
-     * prompt_GetCity() -
-     *
+     * prompt_GetCity() - gets the city entered by the user
      * @return city -  the city field entered and set from prompt_SetCity() method
      */
     public static String prompt_GetCity() {
         return city;
     }
 
+    /**
+     * prompt_SetCity - generates a standard output prompt for the city to be entered and set
+     * setter
+     */
     public static void prompt_SetCity() {
         Scanner sc = new Scanner( System.in );
         System.out.print( "City:\n\t>> " );
         city = sc.nextLine();
     }
 
+    /**
+     * prompt_GetState() - gets the state entered by the user
+     * @return state -  the state field entered and set from prompt_SetState() method
+     */
     public static String prompt_GetState() {
         return state;
     }
 
+    /**
+     * prompt_SetState - generates a standard output prompt for the state to be entered and set
+     * setter
+     */
     public static void prompt_SetState() {
 
         Scanner sc = new Scanner( System.in );
@@ -123,10 +141,18 @@ public class AddressEntry {
 
     }
 
+    /**
+     * prompt_GetZip() - gets the zip entered by the user
+     * @return zip -  the state field entered and set from prompt_SetZip() method
+     */
     public static int prompt_GetZip() {
         return zip;
     }
 
+    /**
+     * prompt_SetZip - generates a standard output prompt for the zip to be entered and set
+     * setter
+     */
     public static void prompt_SetZip() {
         Scanner sc = new Scanner( System.in );
 
@@ -156,27 +182,46 @@ public class AddressEntry {
 
     }
 
+    /**
+     * prompt_GetTelephone() - gets the zip entered by the user
+     * @return phone -  the state field entered and set from prompt_SetTelephone() method
+     */
     public static String prompt_GetTelephone() {
         return phone;
     }
 
+    /**
+     * prompt_SetTelephone - generates a standard output prompt for the telephone to be entered and set
+     * setter
+     */
     public static void prompt_SetTelephone() {
         Scanner sc = new Scanner( System.in );
         System.out.print( "Phone:\n\t>> " );
         phone = sc.nextLine();
     }
 
+    /**
+     * prompt_GetEmail() - gets the zip entered by the user
+     * @return email -  the state field entered and set from prompt_SetEmail() method
+     */
     public static String prompt_GetEmail() {
         return email;
     }
 
+    /**
+     * prompt_SetEmail - generates a standard output prompt for the email to be entered and set
+     * setter
+     */
     public static void prompt_SetEmail() {
         Scanner sc = new Scanner( System.in );
         System.out.print( "Email:\n\t>> " );
         email = sc.nextLine();
-
     }
 
+    /**
+     * Simple override of java’s toString method
+     * @return text -  the combination of all the fields into one nice print statement
+     */
     public String toString() {
 
         StringBuilder builder = new StringBuilder();
@@ -188,7 +233,5 @@ public class AddressEntry {
         }
         String text = builder.toString();
         return text;
-
-
     }
 }

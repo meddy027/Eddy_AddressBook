@@ -7,6 +7,10 @@ public class AddressBook {
     static File filenameForTransfer;
 
 
+    /**
+     * Reads in the user specified file
+     * @param filename the file name entered by the user
+     */
     public static void init(File filename) {
 
         System.out.println( "\n................. Opening " + filename + " .................\n" );
@@ -49,6 +53,9 @@ public class AddressBook {
     }
 
 
+    /**
+     * Lists the entries in the addressbook
+     */
     public static void list() {
         counter = 0;
         String x = abe.toString();
@@ -56,11 +63,22 @@ public class AddressBook {
     }
 
 
+    /**
+     * Boolean method to find if user inputted last name is in the addressbook
+     * @param name name to find
+     * @return true if the last name is in the list false if not
+     */
     public static boolean find(String name) {
 
         return AddressEntry.lnames.contains( name );
     }
 
+    /**
+     * Extra method to display the results of find method
+     * Used because I wanted this method and remove to have different
+     * input and output messages
+     * @param name name to find/found
+     */
     public void displayFindResults(String name) {
 
         int entryCounter = 0;
@@ -94,6 +112,11 @@ public class AddressBook {
 
     }
 
+    /**
+     * uses the find method to find the name. Then calls on
+     * the remove built in method to remove the entry from the addressbook
+     * @param name name to remove from addressbook
+     */
     public static void remove(String name) {
         int entryCounter = 0;
         boolean removal = find( name );
@@ -150,6 +173,9 @@ public class AddressBook {
         }
     }
 
+    /**
+     * adds an entry to the addressbook
+     */
     public static void add() {
         System.out.println( "\n ................. Adding to Address Book ................... \n" );
 

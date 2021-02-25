@@ -56,6 +56,9 @@ public class Menu {
             if (found) {
                 ab.displayFindResults( AddressEntryname );
             }
+            else {
+                System.out.println(AddressEntryname + " not found in this address book");
+            }
             myMenu();
         }
         else if (choice.equalsIgnoreCase( "e" )) {
