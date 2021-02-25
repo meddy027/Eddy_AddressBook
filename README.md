@@ -1,1 +1,1 @@
-javadocs http://localhost:63342/Eddy_Addressbook/docs/package-summary.html
+javadocs http://localhost:63342/Eddy_Addressbook/docs/Menu.html
