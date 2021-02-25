@@ -4,6 +4,8 @@
 public class AddressBookApplication {
 
     /**
+     * The entry point of application.
+     *
      * @param args contains the supplied command-line arguments as an array of String objects.
      */
     public static void main(String[] args) {

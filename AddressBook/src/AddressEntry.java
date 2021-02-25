@@ -9,14 +9,34 @@ public class AddressEntry {
     /**
      * Arraylists to hold parse data from file/program
      */
-
     public static ArrayList<String> fnames = new ArrayList<String>();
+    /**
+     * The constant lnames.
+     */
     public static ArrayList<String> lnames = new ArrayList<String>();
+    /**
+     * The constant streets.
+     */
     public static ArrayList<String> streets = new ArrayList<String>();
+    /**
+     * The constant cities.
+     */
     public static ArrayList<String> cities = new ArrayList<String>();
+    /**
+     * The constant states.
+     */
     public static ArrayList<String> states = new ArrayList<String>();
+    /**
+     * The constant phones.
+     */
     public static ArrayList<String> phones = new ArrayList<String>();
+    /**
+     * The constant emails.
+     */
     public static ArrayList<String> emails = new ArrayList<String>();
+    /**
+     * The constant zips.
+     */
     public static ArrayList<String> zips = new ArrayList<String>();
 
     /**Specific variables to hold parse data from file/program*/
@@ -38,6 +58,8 @@ public class AddressEntry {
 
 
     /**
+     * Instantiates a new Address entry.
+     *
      * @param fName first name of person
      * @param lName last name of person
      * @param st    street of person
@@ -52,6 +74,8 @@ public class AddressEntry {
     }
 
     /**
+     * Prompt get first name string.
+     *
      * @return the first name field entered and set from prompt_SetFirstName() method
      */
     public static String prompt_GetFirstName() {
@@ -110,6 +134,7 @@ public class AddressEntry {
 
     /**
      * prompt_GetCity() - gets the city entered by the user
+     *
      * @return city -  the city field entered and set from prompt_SetCity() method
      */
     public static String prompt_GetCity() {
@@ -128,6 +153,7 @@ public class AddressEntry {
 
     /**
      * prompt_GetState() - gets the state entered by the user
+     *
      * @return state -  the state field entered and set from prompt_SetState() method
      */
     public static String prompt_GetState() {
@@ -148,6 +174,7 @@ public class AddressEntry {
 
     /**
      * prompt_GetZip() - gets the zip entered by the user
+     *
      * @return zip -  the state field entered and set from prompt_SetZip() method
      */
     public static int prompt_GetZip() {
@@ -189,6 +216,7 @@ public class AddressEntry {
 
     /**
      * prompt_GetTelephone() - gets the zip entered by the user
+     *
      * @return phone -  the state field entered and set from prompt_SetTelephone() method
      */
     public static String prompt_GetTelephone() {
@@ -207,6 +235,7 @@ public class AddressEntry {
 
     /**
      * prompt_GetEmail() - gets the zip entered by the user
+     *
      * @return email -  the state field entered and set from prompt_SetEmail() method
      */
     public static String prompt_GetEmail() {

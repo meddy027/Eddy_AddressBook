@@ -1,8 +1,14 @@
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * The type Menu.
+ */
 public class Menu {
 
+    /**
+     * The Ab.
+     */
     static AddressBook ab = new AddressBook();
 
     /**
