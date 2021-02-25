@@ -1,9 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Class to handle menu options
+ */
 public class AddressEntry {
 
-    /*Arraylists to hold parse data from file/program*/
+    /**
+     * Arraylists to hold parse data from file/program
+     */
 
     public static ArrayList<String> fnames = new ArrayList<String>();
     public static ArrayList<String> lnames = new ArrayList<String>();
@@ -14,7 +19,7 @@ public class AddressEntry {
     public static ArrayList<String> emails = new ArrayList<String>();
     public static ArrayList<String> zips = new ArrayList<String>();
 
-    /*Specific variables to hold parse data from file/program*/
+    /**Specific variables to hold parse data from file/program*/
     private static String fName = "";
     private static String lName = "";
     private static String st = "";
