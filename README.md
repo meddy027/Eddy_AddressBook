@@ -1,2 +1,1 @@
-docs
-file:///Users/malikeddy/IdeaProjects/Eddy_Addressbook/docs/
+javadocs http://localhost:63342/Eddy_Addressbook/docs/package-summary.html
