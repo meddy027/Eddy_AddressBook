@@ -1,3 +1,6 @@
+/**
+ * Main class of this addressbook program
+ */
 public class AddressBookApplication {
 
     /**
