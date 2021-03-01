@@ -1,6 +1,3 @@
-javadocs:                                                                 
-localhost:/Users/malikeddy/IdeaProjects/Eddy_Addressbook/docs/index.html
-
 javadoc zip (Dropbox)                                        
 https://www.dropbox.com/s/0gnjh7nhze51p93/Javadocs.zip?dl=0
 
